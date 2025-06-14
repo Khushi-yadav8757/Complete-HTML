@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+  <script>
+    function calculate() {
+      let a = parseFloat(document.getElementById("num1").value);
+      let b = parseFloat(document.getElementById("num2").value);
+      let result = a + b;
+      document.getElementById("result").innerText = "Sum: " + result;
+    }
+  </script>
+</head>
+<body>
+  <h1>Simple Calculator</h1>
+  <input id="num1" type="number" placeholder="Enter first number">
+  <input id="num2" type="number" placeholder="Enter second number">
+  <button onclick="calculate()">Add</button>
+  <p id="result"></p>
+</body>
+</html>
